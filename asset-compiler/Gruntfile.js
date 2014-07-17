@@ -55,12 +55,12 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%= ghost_location %>content/themes/<%= ghost_theme_name %>/assets/css/style.css': ['bower_components/normalize-css/normalize.css', 'compiled_css/compiled_css.css']
+          '<%= ghost_location %>assets/css/style.css': ['bower_components/normalize-css/normalize.css', 'compiled_css/compiled_css.css']
         }
       }
     },
 
-    'ghost_location': '../../Ghost/',
+    'ghost_location': '../',
     'ghost_theme_name': 'magnum',
 
   });
